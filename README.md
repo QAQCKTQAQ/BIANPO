@@ -45,7 +45,10 @@ bianpo_visualization/
 该代码效果为指定账号密码运行采集程序，当不指定时有默认账号密码
 `python powersystem_client.py --username '需要指定的账号' --password '需要指定的密码'`
 该代码效果为指定数据可视化的开始时间点和截至时间点，不指定时默认将当天数据进行可视化
-`python visualize.py ----start_time 'YYYY-MM-DD HH:MM:SS' --end_time 'YYYY-MM-DD HH:MM:SS'`
+`python visualize.py --start_time 'YYYY-MM-DD HH:MM:SS' --end_time 'YYYY-MM-DD HH:MM:SS'`
 
 ## 注意事项
 采集定时结束功能，暂时无法在打包成镜像化后使用 其他功能呢运行正常
+去重功能导致数据量少时报错
+只有表格没有数据时报错
+没有表格没有数据只有文件时报错
